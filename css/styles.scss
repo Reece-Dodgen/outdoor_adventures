@@ -1,9 +1,14 @@
-// adding some sass and css.
-// adding a grid to the body of the home-page.
-// added a background image.
+// Using sass and css.
+// Styling the body with a background image.
 body{
   background: url("adventure-calm-clouds-414171.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+// Applying main grid template to body of the home-page.
+.container{
   display: grid;
   grid-template-areas:
     "header header ads"
@@ -17,11 +22,17 @@ body{
   height: 100vh;
   margin: 0;
 }
+// Applying a subGrid to text and images.
+.subGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
 
 header, footer, article, nav, div {
   padding: 1.2em;
   }
-  // adding a header and giving it some style.
+  // Adding a header and giving it some style.
 .pageHeader {
   grid-area: header;
   text-align: center;
@@ -29,39 +40,40 @@ header, footer, article, nav, div {
   font-size: 20px;
   border: 2px solid black;
   padding: 0px;
-// added a footer.
+  color: black;
   }
+  // Added a footer section.
 .pageFooter {
   grid-area: footer;
   border: 2px solid black;
+  text-align: right;
+  float: right;
   }
-// added a article section, going to apply images in this section.
+// Added a article section, going to apply images in this section.
 .mainArticle {
   grid-area: article;
   border: 2px solid black;
   }
-  // added a nav bar.
+  // Added a nav bar section.
 .mainNav {
   grid-area: nav;
   border: 2px solid black;
   }
-  // styling my nav bar accordingly.
-  // styling my unordered list.
+  // Styling my nav bar accordingly.
+  // Styling my unordered list.
   ul{
     list-style-type: none;
-    font-size: 20px;
+    font-size: 30px;
     margin-right: 30px;
     margin-top: 50px;
   }
   li{
-    width: 300px;
-    padding: 30px;
+    padding: 50px;
   }
   li:hover{
     background-color: black;
-    width: 50px;
   }
-  // styling the links accordingly.
+  // Styling the links accordingly.
   a:hover{
     text-decoration: none;
     color: black;
@@ -74,8 +86,33 @@ header, footer, article, nav, div {
   a:visited{
     color: white;
   }
-
+// Added a ad section.
 .siteAds {
   grid-area: ads;
   border: 2px solid black;
   }
+// Adding a border to my images in home-page.
+.image1{
+  display: inline-flex;
+}
+
+// Adding variables.
+$primaryColor: black;
+$primaryFontSize: 20px;
+$primaryPadding: 50px;
+$secondaryColor: white;
+
+// Using some sass.
+p{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: $primaryFontSize;
+  color: $secondaryColor;
+}
+
+// Adding some styles to my contact-page.
+.body2{
+  text-align: center;
+}
+.header1{
+  color: black;
+}

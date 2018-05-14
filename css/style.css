@@ -1,6 +1,11 @@
 body {
   background: url("adventure-calm-clouds-414171.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; }
+
+.container {
   display: grid;
   grid-template-areas: "header header ads" "nav article article" "nav footer footer";
   grid-template-rows: 80px 1fr 70px;
@@ -11,6 +16,10 @@ body {
   height: 100vh;
   margin: 0; }
 
+.subGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
 header, footer, article, nav, div {
   padding: 1.2em; }
 
@@ -20,11 +29,14 @@ header, footer, article, nav, div {
   font-style: oblique;
   font-size: 20px;
   border: 2px solid black;
-  padding: 0px; }
+  padding: 0px;
+  color: black; }
 
 .pageFooter {
   grid-area: footer;
-  border: 2px solid black; }
+  border: 2px solid black;
+  text-align: right;
+  float: right; }
 
 .mainArticle {
   grid-area: article;
@@ -36,17 +48,15 @@ header, footer, article, nav, div {
 
 ul {
   list-style-type: none;
-  font-size: 20px;
+  font-size: 30px;
   margin-right: 30px;
   margin-top: 50px; }
 
 li {
-  width: 300px;
-  padding: 30px; }
+  padding: 50px; }
 
 li:hover {
-  background-color: black;
-  width: 50px; }
+  background-color: black; }
 
 a:hover {
   text-decoration: none;
@@ -63,5 +73,19 @@ a:visited {
 .siteAds {
   grid-area: ads;
   border: 2px solid black; }
+
+.image1 {
+  display: inline-flex; }
+
+p {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  color: white; }
+
+.body2 {
+  text-align: center; }
+
+.header1 {
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */
