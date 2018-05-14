@@ -1,0 +1,67 @@
+body {
+  background: url("adventure-calm-clouds-414171.jpg");
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header header ads" "nav article article" "nav footer footer";
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0; }
+
+header, footer, article, nav, div {
+  padding: 1.2em; }
+
+.pageHeader {
+  grid-area: header;
+  text-align: center;
+  font-style: oblique;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 0px; }
+
+.pageFooter {
+  grid-area: footer;
+  border: 2px solid black; }
+
+.mainArticle {
+  grid-area: article;
+  border: 2px solid black; }
+
+.mainNav {
+  grid-area: nav;
+  border: 2px solid black; }
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  margin-right: 30px;
+  margin-top: 50px; }
+
+li {
+  width: 300px;
+  padding: 30px; }
+
+li:hover {
+  background-color: black;
+  width: 50px; }
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  font-style: oblique; }
+
+a:link {
+  text-decoration: none;
+  color: white; }
+
+a:visited {
+  color: white; }
+
+.siteAds {
+  grid-area: ads;
+  border: 2px solid black; }
+
+/*# sourceMappingURL=style.css.map */
