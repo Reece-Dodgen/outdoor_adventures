@@ -101,6 +101,7 @@ $primaryColor: black;
 $primaryFontSize: 20px;
 $primaryPadding: 50px;
 $secondaryColor: white;
+$secondFontSize: 50px;
 
 // Using some sass.
 p{
@@ -110,9 +111,23 @@ p{
 }
 
 // Adding some styles to my contact-page.
+// Styling the body of my contact-page.
 .body2{
   text-align: center;
 }
+// Styling the header of my contact-page.
 .header1{
   color: black;
+}
+// Adding some style to the footer of my contact-page.
+.contactFooter{
+  color: black;
+  font-size: $secondFontSize;
+  padding: $primaryPadding;
+}
+
+// Adding some styles to my gallery-page.
+.pageHeader2{
+  color: $primaryColor;
+  font-size: 30px;
 }

@@ -88,4 +88,13 @@ p {
 .header1 {
   color: black; }
 
+.contactFooter {
+  color: black;
+  font-size: 50px;
+  padding: 50px; }
+
+.pageHeader2 {
+  color: black;
+  font-size: 30px; }
+
 /*# sourceMappingURL=style.css.map */
