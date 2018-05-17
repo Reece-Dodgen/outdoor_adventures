@@ -11,9 +11,9 @@ body{
 .container{
   display: grid;
   grid-template-areas:
-    "header header ads"
+    "header header header"
     "nav article article"
-    "nav footer footer";
+    "footer footer footer";
   grid-template-rows: 80px 1fr 70px;
   grid-template-columns: 20% 1fr 15%;
   grid-row-gap: 10px;
@@ -26,7 +26,6 @@ body{
 .subGrid{
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 header, footer, article, nav, div {
@@ -54,7 +53,7 @@ header, footer, article, nav, div {
   grid-area: article;
   border: 2px solid black;
   }
-  // Added a nav bar section.
+  // Added a nav bar section to the home-page.
 .mainNav {
   grid-area: nav;
   border: 2px solid black;
@@ -73,7 +72,7 @@ header, footer, article, nav, div {
   li:hover{
     background-color: black;
   }
-  // Styling the links accordingly.
+  // Styling the links accordingly in the home-page.
   a:hover{
     text-decoration: none;
     color: black;
@@ -86,17 +85,12 @@ header, footer, article, nav, div {
   a:visited{
     color: white;
   }
-// Added a ad section.
+// Added a ad section to the home-page.
 .siteAds {
   grid-area: ads;
   border: 2px solid black;
   }
-// Adding a border to my images in home-page.
-.image1{
-  display: inline-flex;
-}
-
-// Adding variables.
+// Using variables.
 $primaryColor: black;
 $primaryFontSize: 20px;
 $primaryPadding: 50px;
@@ -127,7 +121,63 @@ p{
 }
 
 // Adding some styles to my gallery-page.
+// Adding a header section to my gallery-page.
+// Styling the header.
 .pageHeader2{
+  grid-area: header;
   color: $primaryColor;
   font-size: 30px;
+  font-style: oblique;
+  padding: 0px;
+  color: black;
+  text-align: center;
+}
+// Adding a footer section to my gallery-page.
+// Styling the footer.
+.pageFooter2{
+  grid-area: footer;
+}
+// Adding a section to my gallery-page.
+// Stlying my section.
+.mainSection{
+  grid-area: section;
+}
+// Adding a nav section to my gallery-page.
+// Styling the nav.
+
+// Applying a grid template to my gallery-page.
+.wrapper{
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "section section"
+    "footer footer";
+  grid-template-rows: auto 1fr 70px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+}
+
+// Adding a subGrid to the section "section" in the gallery-page.
+.subGrid2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+// Adding style and borders to the images in the gallery-page.
+// Adding a border to my images in gallery-page.
+// Styling images in my gallery-page.
+.image1{
+  border: 5px solid black;
+}
+.image2{
+  border: 5px solid black;
+}
+.image3{
+  border: 5px solid black;
+}
+.image4{
+  border: 5px solid black;
 }
