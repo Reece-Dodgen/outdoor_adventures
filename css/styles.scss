@@ -1,5 +1,5 @@
-// Using sass and css.
-// Adding variables.
+// USING SASS AND CSS.
+// ADDING VARIABLES.
 $primaryColor: #000000;
 $primaryFontSize: 20px;
 $primaryPadding: 50px;
@@ -11,7 +11,7 @@ $fifthColor: #FCBFB7;
 $sixthColor: #5A2328;
 $seventhColor:  #7A9B76;
 $eighthColor: #090302;
-// Styling the body with a background image.
+// ADDING BACKGROUND-IMAGE TO BODY.
 body{
   background: url("adventure-calm-clouds-414171.jpg");
   background-size: cover;
@@ -20,22 +20,20 @@ body{
   background-blend-mode: color-burn;
   color: #FF3700;
 }
-// Applying main grid template to body of the home-page.
+// APPLIED MAIN GRID TO HOME-PAGE.
 .container{
   display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-areas:
     "header header header"
     "nav article article"
     "footer footer footer";
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 20% 1fr 15%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
   grid-gap: 10px;
   height: 100vh;
   margin: 0;
 }
-// Applying a subGrid to text and images.
+// APPLIED SUBGRID TO TEXT AND IMAGE.
 .subGrid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -44,32 +42,33 @@ body{
 header, footer, article, nav, div {
   padding: 1.2em;
   }
-  // Adding a header and giving it some style.
+  // ADDED HEADER IN HOME-PAGE.
 .pageHeader {
   grid-area: header;
   text-align: center;
   font-size: $secondFontSize;
   color: $primaryColor;
   font-family: 'Kaushan Script', cursive;
+  grid-column: 1/4;
   }
-  // Added a footer section.
+  // ADDED FOOTER IN HOME-PAGE.
 .pageFooter {
   grid-area: footer;
   border: 2px solid $primaryColor;
   text-align: right;
-  height: 100px;
+  // height: 100px;
   }
-// Added a article section, going to apply images in this section.
+// ADDED ARTICLE SECTION, CONTENT AND IMAGES INSIDE FOR HOME-PAGE.
 .mainArticle {
   grid-area: article;
   border: 2px solid $primaryColor;
   }
-  // Added a nav bar section to the home-page.
+  // ADDED NAV BAR IN HOME-PAGE.
 .mainNav {
   grid-area: nav;
   }
-  // Styling my nav bar accordingly.
-  // Styling my unordered list.
+  // STYLING NAV BAR.
+  // STYLING UNORDERED-LIST.
   ul{
     list-style-type: none;
     font-size: 30px;
@@ -87,7 +86,7 @@ header, footer, article, nav, div {
     }
 
   }
-  // Styling the links in the home-page.
+  // STYLING LINKS IN HOME-PAGE.
   a:hover{
     text-decoration: none;
     color: $primaryColor;
@@ -100,31 +99,28 @@ header, footer, article, nav, div {
   a:visited{
     color: $secondaryColor;
   }
-// Added a ad section to the home-page.
-.siteAds {
-  grid-area: ads;
-  border: 2px solid $primaryColor;
-  }
-
-// Using some sass.
+// STYLING P-TAGS.
 p{
   font-family: 'Fjalla One', sans-serif;
   font-size: $primaryFontSize;
   color: $secondaryColor;
 }
 
-// Adding some styles to the contact-page.
-// Styling the body of the contact-page.
+
+
+
+// CONTACT-PAGE.
+// STYLING BODY OF CONTACT-PAGE.
 .body2{
   text-align: center;
 }
-// Styling the header of the contact-page.
+//STYLING HEADER OF CONTACT-PAGE.
 .header1{
   color: $primaryColor;
   font-family: 'Anton', sans-serif;
   font-size: $secondFontSize;
 }
-// Styling the text input accordingly.
+//STYLING TEXT-INPUT OF CONTACT-PAGE.
 input[type=text] {
   border-radius: 10px;
   border-color: $fifthColor;
@@ -133,11 +129,11 @@ input[type=text] {
   background-color: $thirdColor;
   box-shadow: 3px 3px 5px 6px #ccc;
 }
-// Styled placeholders.
+// STYLED PLACEHOLDERS.
 ::placeholder {
   color: $secondaryColor;
 }
-// Styling the select section of the contact-page.
+// STYLING SELECT SECTION OF CONTACT-PAGE.
 select{
   border-radius: 10px;
   border-color: $fifthColor;
@@ -146,7 +142,7 @@ select{
   background-color: $thirdColor;
   box-shadow: 3px 3px 5px 6px #ccc;
 }
-// Styling the textarea.
+// STYLED TEXTAREA.
 textarea{
   border-radius: 10px;
   border-color: $fifthColor;
@@ -155,13 +151,13 @@ textarea{
   background-color: $thirdColor;
   box-shadow: 3px 3px 5px 6px #ccc;
 }
-// Styling the lables.
+// STYLING LABLE.
 label{
   font-family: 'Skranji', cursive;
   font-size: 18px;
   color: $eighthColor;
 }
-// Styling the email input accordingly.
+// STYLING INPUT EMAIL SECTION.
 input[type=email]{
   background-color: $thirdColor;
   border-radius: 10px;
@@ -169,7 +165,7 @@ input[type=email]{
   box-shadow: 3px 3px 5px 6px #ccc;
 
 }
-// Styling the submit button accordingly.
+// STYLE SUBMIT BUTTON.
 input[type=button]{
   background-color: $fourthColor;
   border-radius: 10px;
@@ -183,13 +179,13 @@ input[type=button]:hover{
   box-shadow: inset 0 0 10px $primaryColor;
 
 }
-// Styling the form tag.
+// FORM TAG.
 form{
   font-family: 'Skranji', cursive;
   font-size: 18px;
   color: $seventhColor;
 }
-// Styling the drop-box in the contact-page.
+// DROP-BOX CONTACT-PAGE.
 .dropbtn {
   background-color: #4CAF50;
   color: white;
@@ -229,10 +225,17 @@ form{
   background-color: #3e8e41;
 }
 
+// @media only screen and (max-width: 320px) {
+//   .header1{
+//     color: $primaryColor;
+//     font-family: 'Anton', sans-serif;
+//     font-size: $secondFontSize;
+//     text-align: center;
+//   }
+// }
 
-// Adding some styles to my gallery-page.
-// Adding a header section to my gallery-page.
-// Styling the header.
+// GALLERY PAGE.
+// STYLE HEADER.
 .pageHeader2{
   grid-area: header;
   color: $primaryColor;
@@ -354,3 +357,46 @@ form{
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+// RESPONSIVE DESIGN.
+// RESPONSIVE DESIGNS FOR HOME-PAGE.
+@media screen and (max-width: 320px){
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+    .container{
+      display: grid;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: auto;
+      grid-template-areas:
+        "header"
+        "article"
+        "nav"
+        "footer";
+      grid-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      width: 100%;
+    }
+
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .container{
+      display: grid;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: auto;
+      grid-template-areas:
+        "header header header"
+        "article article"
+        "nav"
+        "footer footer footer";
+      grid-gap: 10px;
+      height: 100vh;
+      margin: 0;
+      width: 100%;
+    }
+  }

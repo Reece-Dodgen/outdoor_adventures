@@ -8,11 +8,9 @@ body {
 
 .container {
   display: grid;
-  grid-template-areas: "header header header" "nav article article" "footer footer footer";
   grid-template-rows: auto auto auto;
-  grid-template-columns: 20% 1fr 15%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "header header header" "nav article article" "footer footer footer";
   grid-gap: 10px;
   height: 100vh;
   margin: 0; }
@@ -28,15 +26,14 @@ header, footer, article, nav, div {
   grid-area: header;
   text-align: center;
   font-size: 50px;
-  border: 2px solid #000000;
   color: #000000;
-  font-family: 'Kaushan Script', cursive; }
+  font-family: 'Kaushan Script', cursive;
+  grid-column: 1/4; }
 
 .pageFooter {
   grid-area: footer;
   border: 2px solid #000000;
-  text-align: right;
-  height: 100px; }
+  text-align: right; }
 
 .mainArticle {
   grid-area: article;
@@ -70,10 +67,6 @@ a:link {
 
 a:visited {
   color: #ffffff; }
-
-.siteAds {
-  grid-area: ads;
-  border: 2px solid #000000; }
 
 p {
   font-family: 'Fjalla One', sans-serif;
@@ -277,5 +270,32 @@ form {
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41; }
+
+@media screen and (max-width: 320px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+
+  .container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "header" "article" "nav" "footer";
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    width: 100%; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: "header header header" "article article" "nav" "footer footer footer";
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
