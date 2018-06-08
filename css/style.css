@@ -553,7 +553,8 @@ form {
     width: 80%; }
 
   form {
-    width: 85%; }
+    width: 85%;
+    text-align: center; }
 
   input[type=text] {
     width: 80%; }

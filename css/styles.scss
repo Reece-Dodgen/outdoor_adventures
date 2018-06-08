@@ -13,7 +13,7 @@ $seventhColor:  #7A9B76;
 $eighthColor: #090302;
 
 // HOME-PAGE
-// outdoorAdventures2.0 grid layout
+// outdoorAdventures grid layout
 .wrapper-two{
   display: grid;
   grid-template-areas: 
@@ -71,8 +71,7 @@ img{
     ul{
       list-style-type: none;
       font-size: 25px;
-      margin-top: 50px;
-    
+      margin-top: 50px; 
     }
   }
     li{
@@ -353,8 +352,8 @@ img{
      50% {opacity: 1; background-color: $primaryColor}
      100% {opacity: 0.5; background-color: $primaryColor} 
   }
-
 }
+
 // SECTION
 .main-section2{
   grid-area: section;
@@ -678,7 +677,6 @@ input[type=button]{
 input[type=button]:hover{
   background-color: $sixthColor;
   box-shadow: inset 0 0 10px $primaryColor;
-
 }
 //Form tag
 form{
@@ -748,6 +746,7 @@ form{
   }
   form{
     width: 85%;
+    text-align: center;
   }
   input[type=text]{
     width: 80%;
